@@ -27,24 +27,34 @@ body {
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-around;
   z-index: 10;
   background-color: #eff6ff;
-  flex: 1;
+  padding: 15px 15px;
 }
 
 .header-college-info-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 10%;
+  /* align-items: center; */
 }
+
 .header-navbar ul {
   display: flex;
+  justify-content: center;
   font-size: 1rem;
   gap: 5%;
 }
+
+.college-info {
+  text-align: center;
+}
+
 .full-height-width {
   height: 100vh;
 }
+
 .imageorvideo {
   height: 100vh;
 }
