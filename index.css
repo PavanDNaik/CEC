@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  height: 200vh;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  border: 1px solid black;
+  z-index: 10;
+  background-color: antiquewhite;
+}
+.header-navbar ul {
+  display: flex;
+  gap: 5%;
+}
+.some-height-width {
+  height: 90vh;
+  border: 1px solid black;
+}
+.imageorvideo {
+  height: 80vh;
+  border: 1px solid black;
+}
+.z-scroll-container {
+}
+.z-scroll-container div {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-z-scroll-info {
+  background-color: rgb(147, 110, 183);
+  z-index: 2;
+}
+.second-z-scroll-info {
+  background-color: aquamarine;
+  z-index: 3;
+}
+.third-z-scroll-info {
+  background-color: rgb(127, 238, 255);
+  z-index: 4;
+}
+.fourth-z-scroll-info {
+  background-color: cadetblue;
+  z-index: 5;
+}
