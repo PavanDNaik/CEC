@@ -3,9 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-size: 20px;
+}
 ul {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -17,34 +23,60 @@ body {
   left: 0;
   right: 0;
   display: flex;
+  justify-content: space-around;
   border: 1px solid black;
   z-index: 10;
   background-color: antiquewhite;
+  flex: 1;
+}
+
+.header-college-info-container {
+  display: flex;
+  flex-direction: column;
 }
 .header-navbar ul {
   display: flex;
+  font-size: 1rem;
   gap: 5%;
 }
-.some-height-width {
-  height: 90vh;
+.full-height-width {
+  height: 100vh;
   border: 1px solid black;
 }
 .imageorvideo {
-  height: 80vh;
+  height: 100vh;
   border: 1px solid black;
 }
-.z-scroll-container {
-}
-.z-scroll-container div {
+
+.z-scroll-container section {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: flex-end; */
 }
-.first-z-scroll-info {
+.about-z-scroll-info {
   background-color: rgb(147, 110, 183);
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5vh 5vw;
+}
+
+.about-cards-container {
+  display: flex;
+  gap: 5%;
+  min-height: 40vh;
+}
+
+.about-cards {
+  border: 1px solid black;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .second-z-scroll-info {
   background-color: aquamarine;
@@ -57,4 +89,9 @@ body {
 .fourth-z-scroll-info {
   background-color: cadetblue;
   z-index: 5;
+}
+footer {
+  height: 100px;
+  bottom: 0;
+  z-index: 6;
 }
